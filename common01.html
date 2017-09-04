@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <!-- base标签用来同意指定网页中所有的超链接如何打开 -->
+    <!-- <base target="_blank"> -->
+</head>
+
+<body>
+    <h1 id='qq' align='center'>这个是h1，h系列标签用来添加语义，不是修改样式</h1>
+    <h2>这个是h2</h2>
+    <h3>这个是h3</h3>
+    <h4>这个是h4</h4>
+    <h5>这个是h5</h5>
+    <h6>这个是h6</h6>
+    这个是普通文本
+    <p>这个是p标签，在浏览器中会独占一行</p>
+    这个是普通文本
+    这个是普通文本
+    <hr>
+    <!-- br在开发中不常用 -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="img/icon/add.png" alt="鼠标提示" title="鼠标悬停弹出的描述">
+    <img src="img/icon/add.png" alt="鼠标提示" width="100" height="100">
+    <!-- 只制定宽度或高度的话，系统会自动计算宽度，等比拉伸 -->
+    <img src="img/icon/add.png" alt="鼠标提示" width="100">
+    <!-- alt属性的用法 -->
+    <img src="img/icon/nonono.png" alt="对不起，您要查看的图片不见了" >
+    <hr>
+    <!-- 这是一个锚点链接，返回顶部 -->
+    <a href="#qq">我是一个a标签</a>
+    <a href="base.html">我也是一个a标签</a>
+    <!-- a标签可以嵌套img，target属性可以另起一个选项卡，title属性用于鼠标悬停的文字描述 -->
+    <a href="base.html" target="_blank" title="鼠标悬停"><img src="img/icon/activity.png"></a>
+    <hr>
+    <ul>
+        <li>北京</li>
+        <li>上海</li>
+        <li>武汉</li>
+    </ul>
+    <h1>四大名著</h1>
+    <ul>
+        <li>
+            <h2>西游记</h2>
+            <p>这里面是一些描述性的文字</p>
+        </li>
+        <li>
+            <h2>西游记</h2>
+            <p>这里面是一些描述性的文字</p>
+        </li>
+    </ul>
+    <h1>物品清单</h1>
+    <ul>
+        <li>
+            <h2>蔬菜</h2>
+            <ul>
+                <li>黄瓜</li>
+                <li>茄子</li>
+            </ul>
+        </li>
+        <li>
+            <h2>水果</h2>
+            <ul>
+                <li>苹果</li>
+                <li>香蕉</li>
+            </ul>
+        </li>
+    </ul>
+    <dl>
+        <dt>北京</dt>
+        <dd>中国的首都</dd>
+        <dd>政治中心</dd>
+        <dt>上海</dt>
+        <dd>魔都</dd>
+    </dl>
+    <hr>
+    <table>
+        <caption>表格标题</caption>
+        <tr>
+            <td>姓名</td>
+            <td>分数</td>
+        </tr>
+        <tr>
+            <td>张帆</td>
+            <td>100</td>
+        </tr>
+    </table>
+    <hr>
+    <form action="www.baidu.com">
+        <label for="account">账号</label><input type="text" name="a" value="默认值" id="account"><br>
+        <label for="password">密码</label><input type="password" name="b" id="password"><br>
+        <!-- 单选框的复制要用name -->
+        <input type="radio" name="gender" checked="checked" value="man">男
+        <input type="radio" name="gender" value="women">女<br>
+        <input type="checkbox" name="hobby" value="foot" id="">足球
+        <input type="checkbox" name="hobby" value="basket" id="">篮球<br>
+        <input type="button" name="" id="" value="我是按钮" onclick="alert(123);">
+        <input type="image" src="img/icon/activity.png" onclick="alert(123);">
+        <!-- 重置按钮用来清空表单中已经填写好的数据 -->
+        <input type="reset" value="清空">
+        <input type="submit" value="commit"><br>
+        <!-- 配合提交一些数据，ajax的时候才能用到 -->
+        <input type="hidden" name="cc" value="kukuku">
+        <input type="text" list="cars"><br>
+        <datalist id="cars">
+            <option value="奔驰"></option>
+            <option value="宝马"></option>
+            <option value="奥迪"></option>
+        </datalist>
+        <!-- select标签 -->
+        <select>
+            <option value="">北京</option>
+            <option value="">上海</option>
+            <option value="">武汉</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- 除了button标签外，其他的表单标签都可以通过value属性指定提交到服务器的值 -->
+
+    </form>
+    <hr>
+    <video autoplay="autoplay" controls="controls">
+        <source src="img/mov_bbb.ogg">
+    </video>
+    <hr>
+    <details>
+        <summary>概要信息</summary>
+        详情信息
+    </details>
+    <hr>
+    <marquee behavior="" direction="">haha</marquee>
+    
+
+
+
+</body>
+
+</html>
+
