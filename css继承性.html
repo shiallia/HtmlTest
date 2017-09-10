@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+        /* 以color,font.text,line开头的属性才可以继承 */
+        /* 所有后代都可以继承,包括儿子孙子 */
+        /* a标签的文字颜色和下划线不能继承 */
+        /* h标签的文字大小不能继承 */
+        /* 优先级：id>clsss>标签>*>继承>浏览器默认 */
+        div{
+            color: red;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>看好了，好我是红色的</p>
+    </div>
+</body>
+
+</html>

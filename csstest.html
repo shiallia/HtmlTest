@@ -5,17 +5,39 @@
     <meta charset="UTF-8" />
     <title></title>
     <style>
+        /* 这个是标签选择器 */
         p{
             font-style: "宋体";
             color: rgba(255,0,0, 0.5)
             
+        }
+        h1{
+            font-size: 80px;
+        }
+        /* 这个是id选择器 */
+        #hh22{
+            color: rgb(0,255,0)
+        }
+        /* 类选择器 */
+        .hh33{
+            color: rgb(0, 0,255)
+        }
+        /* 并集选择器 */
+        .aa,#bb{
+            color:red;
         }
     </style>
 </head>
 
 <body>
 </body>
-    <p>测试字体</p>
-    <h1>微软雅黑</h1>
-    <p>test</p>
+    <p>演示一下标签选择器</p>
+    <h1>演示一下标签选择器</h1>
+    <h2 id="hh22">演示一下id选择器</h2>
+    <p class="hh33">演示一下类选择器</p>
+
+    <div>
+        <p class="aa">11111</p>
+    </div>
+    <p id="bb">11111</p>
 </html>

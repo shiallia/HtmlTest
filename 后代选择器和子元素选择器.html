@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <style>
+        /* 这个是后代选择器，选择所有后代，儿子，孙子.... */
+        div p{
+            color: rgb(255, 0, 0)
+        }
+        /* 这个是子元素选择器，选择儿子*/
+        #test>p{
+            color: rgb(0,255, 0)
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>这个是测试用过的</p>
+    <div>
+        <ul>
+            <li>
+                <p>这个是测试用过的</p>
+            </li>
+        </ul>
+        <p>这个是测试用过的</p>
+
+    </div>
+
+    <div id="test">
+        <ul>
+            <li>
+                    <p>这个是测试用过的</p>
+            </li>
+        </ul>
+        <p>这个是测试用过的</p>
+    </div>
+</body>
+
+</html>
